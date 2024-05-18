@@ -12,6 +12,7 @@ import java.io.IOException;
 
 @WebServlet("/request-service")
 public class ServiceMethodTestServlet extends HttpServlet {
+
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
         System.out.println("req = " + req);
