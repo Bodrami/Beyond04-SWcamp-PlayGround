@@ -32,6 +32,7 @@ public class RequestHeaderPrintServlet extends HttpServlet {
          *          (요청 및 응답 모두에서 사용되며, 메세지 body의 컨텐츠를 나타내기에 GET요청은 해당되지 않는다.)
          *          (Content_Length, Content_Type, Content_Language, Content_Encoding)
         * */
+
         Enumeration<String> headerNames = req.getHeaderNames();
         while (headerNames.hasMoreElements()) {
             System.out.println(headerNames.nextElement());
