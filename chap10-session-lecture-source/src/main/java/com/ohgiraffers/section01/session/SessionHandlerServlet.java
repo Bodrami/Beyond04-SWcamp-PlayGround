@@ -11,6 +11,7 @@ import java.io.IOException;
 
 @WebServlet("/session")
 public class SessionHandlerServlet extends HttpServlet {
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String firstName = req.getParameter("firstName");
