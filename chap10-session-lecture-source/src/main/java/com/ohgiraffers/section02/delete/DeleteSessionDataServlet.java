@@ -11,6 +11,7 @@ import java.io.IOException;
 
 @WebServlet("/delete")
 public class DeleteSessionDataServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
