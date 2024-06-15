@@ -22,6 +22,7 @@ public class FirstFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException, IOException {
+
         System.out.println("FirstFilter doFilter 호출!");
         /* 설명. 다음 필터 또는 서블릿으로 가기 전에 전처리를 위한 코드를 여기에 작성 */
 
