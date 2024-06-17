@@ -5,6 +5,7 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
+
  <!-- h1[align="center"]{redirect} -->
  <h1 align="center">redirect</h1>
  <ul>
