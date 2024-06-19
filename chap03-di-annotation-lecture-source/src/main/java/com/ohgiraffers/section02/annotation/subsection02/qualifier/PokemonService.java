@@ -1,0 +1,24 @@
+package com.ohgiraffers.section02.annotation.subsection02.qualifier;
+
+import com.ohgiraffers.section02.annotation.common.Pokemon;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+
+@Service("pokemonServiceQualifer")
+public class PokemonService {
+
+    /* 설명. @Qualifier 를 통해 원하는 bean 이름(id)으로 하나의 빈을 주입 받을 수 있다. */
+//    @Autowired
+//    @Qualifier("squirtle")   // @Primary 보다 높은 어노테이션
+    private Pokemon pokemon;
+
+    @Autowired
+    public PokemonService(@Qualifier("squirtle") Pokemon pokemon) {
+        this.pokemon = pokemon;
+    }
+
+    public void pokemonAttack() {
+        pokemon.attack();
+    }
+}
