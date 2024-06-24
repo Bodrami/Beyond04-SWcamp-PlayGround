@@ -10,6 +10,7 @@ import java.io.IOException;
 
 @WebServlet("/otherservlet")
 public class OtherServletRedirectServlet extends HttpServlet {
+
     // 기본 생성자는 자동으로 생성 된다.
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
