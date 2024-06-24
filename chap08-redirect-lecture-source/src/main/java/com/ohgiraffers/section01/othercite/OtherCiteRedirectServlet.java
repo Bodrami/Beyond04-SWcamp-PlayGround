@@ -19,6 +19,7 @@ public class OtherCiteRedirectServlet extends HttpServlet {
         System.out.println("get 요청을 받으면 naver 사이트로 redirect");
 
         /* 설명. 리다이렉트는 우리 서블릿 객체 뿐 아니라 외부 사이트로도 연결이 가능하다. */
+
         resp.sendRedirect("http://www.naver.com");
     }
 }
